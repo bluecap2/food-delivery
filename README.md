@@ -32,7 +32,8 @@ intensive coursework level 2 cloud native development 과정 최종 과제
 1. 성능
     1. 수신자는 자주 메일함에서 내용을 확인할 수 있는 메일조회시스템(프론트엔드)에서 확인할 수 있어야 한다  CQRS
     1. 송신과 수신이 정상적으로 완료되면 카톡 등으로 알림을 줄 수 있어야 한다  Event driven
-
+1. 트랜잭션
+    1. 전송했을 때 결제를 반드시 거쳐야 발송이 가능하다. Request/Response 
 
 
 
