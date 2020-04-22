@@ -65,10 +65,13 @@
         - Core Domain:  mobile(front), mailbox : 없어서는 안될 핵심 서비스이며, 연견 Up-time SLA 수준을 99.999% 목표, 배포주기는 app 의 경우 1주일 1회 미만, store 의 경우 1개월 1회 미만
         - Supporting Domain:   alarm : 경쟁력을 내기위한 서비스이며, SLA 수준은 연간 60% 이상 uptime 목표, 배포주기는 각 팀의 자율이나 표준 스프린트 주기가 1주일 이므로 1주일 1회 이상을 기준으로 함.
  
-## 폴리시의 이동과 컨텍스트 매핑, 모형 완성
+## 폴리시의 이동과 컨텍스트 매핑
 
 ![image](https://user-images.githubusercontent.com/48303857/79931740-a65fc600-8486-11ea-9f75-66655a5ebc50.png)
 
+## 모델 완성
+
+![image](https://user-images.githubusercontent.com/48303857/79931947-3998fb80-8487-11ea-9129-09b40f63deb4.png)
     - View Model 추가
     
 ## 1차 완성본에 대한 기능적/비기능적 요구사항을 커버하는지 검증
