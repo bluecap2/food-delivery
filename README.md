@@ -44,7 +44,7 @@ admin23acr
 # 분석/설계
 
 
-* 이벤트스토밍 결과:  http://msaez.io/#/storming/nZJ2QhwVc4NlVJPbtTkZ8x9jclF2/every/a77281d704710b0c2e6a823b6e6d973a/-M5AV2z--su_i4BfQfeF
+* 이벤트스토밍 결과:  http://msaez.io/#/storming/HluP7yEOV7Pf1n7CpyHZMBPUJL32/mine/6230d03790bf283e6336bdcaa169344d/-M5WDffnL3y8ZQvvcRf6
 
 ## 이벤트 도출, 액터, 커맨드 부착하여 읽기 좋게-> 어그리게잇으로 묶기
 ![image](https://user-images.githubusercontent.com/48303857/79930894-9e068b80-8484-11ea-96f4-289bc5a1f769.png)
