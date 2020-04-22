@@ -250,7 +250,7 @@ http localhost:8081/orders/1
     }
 
 ```
-sent 되고나서 Event를 Kafka로 전송하고 이를 수신한 mailbox 시스템에서 saved 처리를 함
+sent 되고나서 Event를 Kafka로 전송하고 이를 수신한 mailbox 시스템에서 saved 처리를 함 - 비동기식 Event Driven 
 ![image](https://user-images.githubusercontent.com/48303857/79946264-922dc000-84aa-11ea-90b8-587f1e090daa.png)
 
 
@@ -260,15 +260,14 @@ alarm 시스템은 다른 분리되어있으며, 이벤트 수신에 따라 처�
 ```
 # alarm 서비스 를 잠시 내려놓음
 
-#주문처리
-http localhost:8081/orders item=통닭 storeId=1   #Success
-http localhost:8081/orders item=피자 storeId=2   #Success
+#메세지 발송처리
+http POST localhost:8081/mobiles user=01012345678 receiver=01099998888 text="hello"   #Success
 
 # alarm 서비스 기동
 cd alarm
 mvn spring-boot:run
 
-#주문상태 확인
+#메세지 수신 확인
 -처리시간이 상이하더라도 실행되는 결과에는 문제가 없음. (비지니스적으로 시간 Delay는 허용함)
 ```
 ![image](https://user-images.githubusercontent.com/48303857/79948095-29e0dd80-84ae-11ea-8750-35f6971a5e74.png)
