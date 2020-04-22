@@ -1,14 +1,14 @@
 # 최종 - 한준성 - 문자사서함
+intensive coursework level 2 cloud native development 과정 최종 과제
 
 # Table of contents
 
 - [최종 - 한준성 - 문자사서함](#최종 - 한준성 - 문자사서함)
   - [서비스 시나리오](#서비스 시나리오)
   - [분석/설계](#분석설계)
+    - [모델 완성](#모델 완성)
   - [구현:](#구현-)
     - [DDD 의 적용](#ddd-의-적용)
-    - [폴리글랏 퍼시스턴스](#폴리글랏-퍼시스턴스)
-    - [폴리글랏 프로그래밍](#폴리글랏-프로그래밍)
     - [동기식 호출 과 Fallback 처리](#동기식-호출-과-Fallback-처리)
     - [비동기식 호출 과 Eventual Consistency](#비동기식-호출-과-Eventual-Consistency)
   - [운영](#운영)
