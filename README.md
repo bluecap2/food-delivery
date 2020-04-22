@@ -273,14 +273,19 @@ mvn spring-boot:run
 ![image](https://user-images.githubusercontent.com/48303857/79948095-29e0dd80-84ae-11ea-8750-35f6971a5e74.png)
 
 
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
 # 운영
 
-## CI/CD 설정
+## CI/CD 설정 : Azure Devops pipeline 
+
+각 구현체들은 각자의 source repository 에 구성되었고, 사용한 CI/CD 플랫폼은 Azure pipeline 사용하였으며, pipeline build script 는 각 프로젝트 폴더 이하에 azure-pipelines.yml 에 포함되었다.
+![image](https://user-images.githubusercontent.com/48303857/79966563-91a42200-84c8-11ea-9ea7-1f64c5ee7070.png)
 
 
-각 구현체들은 각자의 source repository 에 구성되었고, 사용한 CI/CD 플랫폼은 GCP를 사용하였으며, pipeline build script 는 각 프로젝트 폴더 이하에 cloudbuild.yml 에 포함되었다.
+Github 소스가 커밋됨과 동시에 pipeline이 실행되며 배포가 된다
+![image](https://user-images.githubusercontent.com/48303857/79967770-3c691000-84ca-11ea-9b69-d1c75a62a49d.png)
+![image](https://user-images.githubusercontent.com/48303857/79967840-5276d080-84ca-11ea-9ccb-6460ef53105a.png)
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 
 ## 동기식 호출 / 서킷 브레이킹 / 장애격리
