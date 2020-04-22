@@ -96,6 +96,14 @@ intensive coursework level 2 cloud native development 과정 최종 과제
 
     - Chris Richardson, MSA Patterns 참고하여 Inbound adaptor와 Outbound adaptor를 구분함
     - 서브 도메인과 바운디드 컨텍스트의 분리:  각 팀의 KPI 별로 아래와 같이 관심 구현 스토리를 나눠가짐
+    - 알람 DB는 DocumentDB 구현을 통해 Polyglot 구조를 가지도록 설계
+
+## Request-Response 모델 구현
+
+![image](https://user-images.githubusercontent.com/48303857/79941104-78867b80-849e-11ea-832d-7b1866691d96.png)
+    
+    - 전송 요청을 하면 결제를 반드시 거쳐서 메세지가 발송되도록 Req/Res 호출구조를 만들었다.
+     
 
 
 # 구현:
