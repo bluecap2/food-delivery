@@ -288,6 +288,33 @@ mvn spring-boot:run
 ```
 ![image](https://user-images.githubusercontent.com/48303857/79948095-29e0dd80-84ae-11ea-8750-35f6971a5e74.png)
 
+## CQRS 적용 View
+타 마이크로서비스의 데이터 원본에 접근없이(Composite 서비스나 조인SQL 등 없이)도 내 서비스의 화면 구성과 잦은 조회가 가능 하도록
+Event 방식의 데이터 적제를 통한 메일함 조회 View를 구현함.
+
+```
+@StreamListener(KafkaProcessor.INPUT)
+    public void whenSaved_then_CREATE_1 (@Payload Saved saved) {
+        try {
+            if (saved.isMe()) {
+                // view 객체 생성
+                Readmail readmail = new Readmail();
+                // view 객체에 이벤트의 Value 를 set 함
+                readmail.setId(saved.getId());
+                readmail.setSender(saved.getSender());
+                readmail.setReceiver(saved.getReceiver());
+                readmail.setText(saved.getText());
+                // view 레파지 토리에 save
+                readmailRepository.save(readmail);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+```
+![image](https://user-images.githubusercontent.com/48303857/80051102-4df5fa80-8552-11ea-86c6-e7cd8c2c3791.png)
+
+
 
 # 운영
 
