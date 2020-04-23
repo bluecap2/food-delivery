@@ -11,10 +11,10 @@ admin23aks,
 admin23acr
 
 ##깃주소 :
-https://github.com/bluecap2/mailbox-mailbox
-https://github.com/bluecap2/mailbox-alarm
-https://github.com/bluecap2/mailbox-mobile
-https://github.com/bluecap2/mailbox-gateway
+  https://github.com/bluecap2/mailbox-mailbox
+  https://github.com/bluecap2/mailbox-alarm
+  https://github.com/bluecap2/mailbox-mobile
+  https://github.com/bluecap2/mailbox-gateway
 
 ##메세지보내기 호출 :
 http POST 52.141.27.158:8080/mobiles user=01012345678 receiver=01099998888 text="hello"
