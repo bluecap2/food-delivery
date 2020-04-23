@@ -1,25 +1,25 @@
 # 최종 - 한준성 - 문자사서함
 intensive coursework level 2 cloud native development 과정 최종 과제
 
-##사용계정
+##사용계정 :
 admin23@gkn2021hotmail.onmicrosoft.com
 skcc123!
 
-##리소스이름
+##리소스이름 :
 admin23,
 admin23aks,
 admin23acr
 
-##깃주소
+##깃주소 :
 https://github.com/bluecap2/mailbox-mailbox
 https://github.com/bluecap2/mailbox-alarm
 https://github.com/bluecap2/mailbox-mobile
 https://github.com/bluecap2/mailbox-gateway
 
-##메세지보내기 호출
+##메세지보내기 호출 :
 http POST 52.141.27.158:8080/mobiles user=01012345678 receiver=01099998888 text="hello"
 
-##kafka topic mailbox
+##kafka topic mailbox :
 kubectl -n kafka exec -ti my-kafka-0 -- kafka-console-consumer --bootstrap-server my-kafka:9092 --topic mailbox --from-beginning
 
 # Table of contents
