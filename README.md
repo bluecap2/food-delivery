@@ -19,6 +19,9 @@ https://github.com/bluecap2/mailbox-gateway
 ##메세지보내기 호출 :
 http POST 52.141.27.158:8080/mobiles user=01012345678 receiver=01099998888 text="hello"
 
+##VIEW
+http 52.141.27.158:8080/readmails
+
 ##kafka topic mailbox :
 kubectl -n kafka exec -ti my-kafka-0 -- kafka-console-consumer --bootstrap-server my-kafka:9092 --topic mailbox --from-beginning
 
