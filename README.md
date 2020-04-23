@@ -376,3 +376,4 @@ Reediness 설정이 적용 된 mobile 시스템에 부하를 주고 availability
 
 Readiness 설정을 해제하고 동일하게 부하 테스트를 하였다.
 
+![image](https://user-images.githubusercontent.com/48303857/80061127-57d82780-856b-11ea-92c7-f7430b0040a5.png)
