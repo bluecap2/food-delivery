@@ -352,3 +352,27 @@ kubectl get deploy pay -w
 ![image](https://user-images.githubusercontent.com/48303857/80052226-25bbcb00-8555-11ea-889c-6b8a51e23e18.png)
 
 
+## Readiness 적용 
+Reediness 설정이 적용 된 mobile 시스템에 부하를 주고 availability를 확인해보았다.
+```
+      readinessProbe:
+        httpGet:
+          path: /actuator/health
+          port: 8080
+        initialDelaySeconds: 10
+        timeoutSeconds: 2
+        periodSeconds: 5
+        failureThreshold: 10
+      livenessProbe:
+        httpGet:
+          path: /actuator/health
+          port: 8080
+        initialDelaySeconds: 120
+        timeoutSeconds: 2
+        periodSeconds: 5
+        failureThreshold: 5
+```
+![image](https://user-images.githubusercontent.com/48303857/80060486-a8e71c00-8569-11ea-95ad-8bad542c9c54.png)
+
+Readiness 설정을 해제하고 동일하게 부하 테스트를 하였다.
+
