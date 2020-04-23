@@ -11,9 +11,9 @@ admin23aks,
 admin23acr
 
 ##깃주소 :
-  https://github.com/bluecap2/mailbox-mailbox
-  https://github.com/bluecap2/mailbox-alarm
-  https://github.com/bluecap2/mailbox-mobile
+  https://github.com/bluecap2/mailbox-mailbox,
+  https://github.com/bluecap2/mailbox-alarm,
+  https://github.com/bluecap2/mailbox-mobile,
   https://github.com/bluecap2/mailbox-gateway
 
 ##메세지보내기 호출 :
